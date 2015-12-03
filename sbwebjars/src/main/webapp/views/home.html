@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" layout:decorator="layout/default">
+<head>
+  <title>Spring Boot and Thymeleaf - WebJars :: Home page</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+      th:src="@{/webjars/jquery/1.11.3/jquery.min.js}"></script>
+  <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css" 
+        th:href="@{/webjars/bootstrap/3.3.4/css/bootstrap.min.css}" rel="stylesheet" media="screen" />
+  <link rel="stylesheet" type="text/css" media="screen" href="../../css/common.css" th:href="@{/css/common.css}" />
+</head>
+<body>
+
+<div id="page-wrapper" layout:fragment="content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="page-header"><img src="../images/home.png" th:src="@{/images/home.png}" /> Home Page</h2>
+        <p>Please <a href="user-list.html" th:href="@{/user-list.html}"><b>click</b></a> to see user list.</p>
+      </div>
+      <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container-fluid -->
+</div>
+
+</body>
+</html>
